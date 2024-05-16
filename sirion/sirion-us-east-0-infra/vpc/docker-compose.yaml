@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  terraform:
+    image: hashicorp/terraform:1.5
+    volumes:
+      - .:/infra
+    working_dir: /infra
+    environment:
+      - IC_API_KEY=${IC_API_KEY}
+      # - IAAS_CLASSIC_USERNAME=${IAAS_CLASSIC_USERNAME}
+      # - IAAS_CLASSIC_API_KEY=${IAAS_CLASSIC_API_KEY}
+

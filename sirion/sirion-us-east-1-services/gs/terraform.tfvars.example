@@ -1,0 +1,30 @@
+# Copy this file to terraform.tfvars and update the variable values
+vpc            = "demo-vpc"
+keys           = ["mykey"]
+resource_group = "demo"
+region         = "us-east"
+tags           = ["owner:joe"]
+zones = {
+  "zone1" = "us-east-1"
+  "zone2" = "us-east-2"
+  "zone3" = "us-east-3"
+}
+gs1_image            = "ibm-ubuntu-22-04-4-minimal-amd64-1"
+gs1_profile          = "gx3-16x80x1l4"
+gs1_zone             = "us-east-1"
+gs1_subnet           = "subnet1"
+gs1_data_volume_size = 1000 # default:10 - no disk volume will not be created
+gs1_count            = 0
+gs2_image            = "ibm-ubuntu-22-04-4-minimal-amd64-1"
+gs2_profile          = "gx3-16x80x1l4"
+gs2_zone             = "us-east-2"
+gs2_subnet           = "subnet2"
+gs2_data_volume_size = 1000 # default:10 - no disk volume will not be created
+gs2_count            = 1
+gs3_image            = "ibm-ubuntu-22-04-4-minimal-amd64-1"
+gs3_profile          = "gx3-16x80x1l4"
+gs3_zone             = "us-east-3"
+gs3_subnet           = "subnet3"
+gs3_data_volume_size = 1000 # default:10 - no disk volume will not be created
+gs3_count            = 1
+
